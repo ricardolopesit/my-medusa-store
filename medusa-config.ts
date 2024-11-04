@@ -17,7 +17,14 @@ module.exports = defineConfig({
     {
       resolve:"@medusajs/tax",
       options:{
+        providers:[
 
+            {
+            resolve: "./src/services/my-tax",
+            id: "my-tax",
+            options: {},
+            }
+        ]
       }
     }
   ]
